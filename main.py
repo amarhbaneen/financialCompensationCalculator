@@ -1,4 +1,5 @@
 import datetime
+import openpyxl
 import pandas as pd
 
 
@@ -18,7 +19,7 @@ class employee:
         self.leaveReason = leaveReason
 
 
-df = pd.read_excel(r'data.xlsx', header=1)
+df = pd.read_excel(r'C:\Users\amara\Desktop\data.xlsx', header=1)
 df.to_csv('csvfile.csv', encoding='utf-8')
 df = pd.read_csv('csvfile.csv', encoding='utf-8')
 df = df.reset_index()
