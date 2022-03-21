@@ -1,6 +1,8 @@
 import datetime
 import openpyxl
 import pandas as pd
+import openpyxl
+
 
 
 class employee:
@@ -23,6 +25,7 @@ df = pd.read_excel(r'C:\Users\amara\Desktop\data.xlsx', header=1)
 df.to_csv('csvfile.csv', encoding='utf-8')
 df = pd.read_csv('csvfile.csv', encoding='utf-8')
 df = df.reset_index()
+
 employeeArray = []
 for i in df.iterrows():
     print(i)
