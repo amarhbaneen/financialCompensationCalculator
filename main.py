@@ -24,6 +24,7 @@ df = pd.read_excel(r'data.xlsx', header=1)
 df.to_csv('csvfile.csv', encoding='utf-8')
 df = pd.read_csv('csvfile.csv', encoding='utf-8')
 df = df.reset_index()
+
 employeeArray = []
 for i in df.iterrows():
     print(i)
